@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS Intermediario</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<style type="text/css">
+
+		body{
+			font-size: 1em;
+			margin: 0;
+			padding: 0;
+		}
+
+		a{
+			text-decoration: none;
+
+		}
+
+
+		li{
+			float: left;
+			margin-right: 15px; 
+			border: solid 2px black;
+			border-radius: 5px;
+			padding: 2px;
+			background-color: orange;
+
+		}
+
+		a:hover{
+			background-color: red;
+			color: green;
+			
+		}
+
+		li:hover{
+			float: left;
+			margin-right: 15px; 
+			border: solid 2px red;
+			border-radius: 5px;
+			padding: 2px;
+			background-color: red;
+			color: white;
+			border-color: white;
+		}
+
+		.bg-red{
+			background-color: red;
+		}
+
+		.bg-blue{
+			background-color: blue;
+		}
+
+		.bg-green{
+			background-color: green;
+		}
+
+		.header{
+
+			overflow: hidden;
+			margin: auto;
+			width: 80%;
+			padding: 15px;
+			box-sizing: border-box;
+
+		}
+
+		.logo{
+			
+			float: left;
+
+		}
+
+		.menu{
+			
+			list-style: none;
+			margin-top:  20px;
+			padding:0;
+			float: right;
+			color: black;
+		
+			
+		}
+
+		.footer{
+
+			width: 80%;
+			padding: 30px;
+			margin-right: 10%;
+			margin-left: 10%;
+			margin-top: 10px;
+			background-color: blue;
+			border: 0;
+			margin: auto;
+			box-sizing: border-box;
+
+		}
+
+
+		.quadrado{
+			width: 80%;
+			height: 600px;
+			background-color: yellow;
+			margin-top: 10px;
+			margin-right: 10%;
+			margin-left: 10%;
+		}
+		
+
+		@media screen and (max-width: 480px){
+
+			.header{
+
+				overflow: hidden;
+				margin: auto;
+				width: 80%;
+
+			}
+
+			.logo{
+			
+				float: none;
+				margin: auto;
+				text-align: center;
+
+
+			}
+
+			.menu{
+			
+				list-style: none;
+				margin: auto;
+				float: none;
+				color: black;
+				background-color: yellow;
+				
+			
+			}
+
+			li{
+				float: none;
+				margin-top:  10px;
+				background-color: green;
+				text-align: center;
+				border: solid 2px black;
+
+
+		}	
+
+			li:hover{
+				float: none;
+				margin-right: 15px; 
+				border: solid 2px red;
+				border-radius: 5px;
+				padding: 2px;
+				background-color: red;
+				color: white;
+				border-color: white;
+		}
+
+
+		
+	</style>
+
+
+</head>
+
+
+
+<body>
+
+	<div class="header bg-blue">
+		<div style="" class="logo bg-red">
+			<img style="width: 100px" src="./images/basis.jpeg">
+		</div>
+	
+		<ul class="menu">
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"><li>Home</li></a>
+			<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clearfix" target="_blank"><li>Cursos</li></a>
+			<a href="https://translate.google.com/" target="_blank"><li>Contatos</li></a>
+				
+		</ul>
+
+	</div>
+
+
+	
+	<div class="quadrado"></div>
+	<br>
+
+	<div class="footer"></div>
+
+</body>
+
+
+
+
+
+</html>
